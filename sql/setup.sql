@@ -8,3 +8,12 @@ CREATE TABLE github_users (
   email TEXT,
   avatar TEXT
 );
+
+
+DROP TABLE IF EXISTS posts;
+
+CREATE TABLE posts (
+  post_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  userposts TEXT
+  
+);
